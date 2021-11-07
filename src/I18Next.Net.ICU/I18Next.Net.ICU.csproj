@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>DarkLiKally</Company>
     <Authors>DarkLiKally</Authors>
@@ -9,6 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <Product>I18Next.Net</Product>
     <Version>0.7.1</Version>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DocumentationFile>bin\Debug\I18Next.Net.ICU.xml</DocumentationFile>
@@ -17,7 +18,7 @@
     <DocumentationFile>bin\Release\I18Next.Net.ICU.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MessageFormat" Version="3.0.1" />
+    <PackageReference Include="MessageFormat" Version="5.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\I18Next.Net\I18Next.Net.csproj" />

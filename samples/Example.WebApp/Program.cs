@@ -2,6 +2,7 @@
 using System.Threading;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace Example.WebApp
 {
@@ -10,6 +11,10 @@ namespace Example.WebApp
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((_, configuration) =>
+                {
+                    configuration.AddTranslationsConfiguration();
+                })
                 .UseStartup<Startup>();
         }
 

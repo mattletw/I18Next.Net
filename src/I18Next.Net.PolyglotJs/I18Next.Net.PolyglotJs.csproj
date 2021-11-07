@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>DarkLiKally</Authors>
     <Company>DarkLiKally</Company>
@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/DarkLiKally/I18Next.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Version>0.7.1</Version>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DocumentationFile>bin\Debug\I18Next.Net.PolyglotJs.xml</DocumentationFile>

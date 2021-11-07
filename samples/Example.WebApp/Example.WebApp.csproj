@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -9,6 +10,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Groceriz.Common.TranslationsConfigurationProvider\Groceriz.Common.TranslationsConfigurationProvider.csproj" />
+      <ProjectReference Include="..\..\I18Next.Net.RemoteJsonFileBackend\I18Next.Net.RemoteJsonFileBackend.csproj" />
       <ProjectReference Include="..\..\src\I18Next.Net.AspNetCore\I18Next.Net.AspNetCore.csproj" />
       <ProjectReference Include="..\..\src\I18Next.Net.Extensions\I18Next.Net.Extensions.csproj" />
       <ProjectReference Include="..\..\src\I18Next.Net\I18Next.Net.csproj" />

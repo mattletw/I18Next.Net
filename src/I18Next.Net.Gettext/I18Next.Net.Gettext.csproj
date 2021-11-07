@@ -9,7 +9,8 @@
         <RepositoryType>git</RepositoryType>
         <Product>I18Next.Net</Product>
         <Version>0.7.1</Version>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -26,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="NGettext" Version="0.6.4" />
+      <PackageReference Include="NGettext" Version="0.6.7" />
     </ItemGroup>
 
 </Project>

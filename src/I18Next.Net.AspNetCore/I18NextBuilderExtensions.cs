@@ -11,6 +11,7 @@ namespace I18Next.Net.AspNetCore
                 .AddLanguageDetector<ThreadLanguageDetector>()
                 .AddInterpolator<HtmlInterpolator>()
                 .Configure(o => o.DetectLanguageOnEachTranslation = true);
+                
 
             return builder;
         }

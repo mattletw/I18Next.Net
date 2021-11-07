@@ -5,7 +5,7 @@
     "about": {
         "description": "This is the description of your about page.",
         "renderedOn": "This page was rendered on {{date, yyyy/mm/dd}}.",
-        "additionalInformation": "additional information",
+        "additionalInformation": "additional eddnformation",
         "infoText": "Use this area to provide $t(about.additionalInformation)."
     }
 }
